@@ -1,0 +1,109 @@
+@font-face {
+    font-family: title-font;
+    src: url(/assets/font/BreeSerif-Regular.ttf);
+}
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+body{
+    background-color: hsl(0, 0%, 26%);
+    justify-content: center;
+    background-image: url(/assets/image/wallpaperflare.com_wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+/* header */
+}
+header{ 
+    background: rgb(0,0,0);
+    background: rgb(22,17,22);
+    background: linear-gradient(180deg, rgba(22,17,22,1) 0%, rgba(31,9,47,1) 100%);
+}
+header .container{
+    height: 200px;
+}
+.container{
+    width: 1500px;
+    margin: 0 auto;
+/* logo image  */
+}
+.content{
+    position: relative;
+}
+header .logo{
+    width: 250px;
+    position: absolute;
+    left: 640px;
+    top: -25px
+}
+/* social media icons box  */
+.social-box{
+    position: absolute;
+    top: 137px;
+    right: 0;
+    margin-right: 0;
+}
+.discord{
+    width: 55px;
+    height: auto;
+    float: left;
+    margin-right: 5px;
+}
+.instagram{
+    width: 55px;
+    height: auto;
+    float: left;
+    margin-right: 5px;
+}
+.telegram{
+    width: 55px;
+    height: auto;
+    float: left;
+}
+/* search box  */
+.search-box{
+    position: absolute;
+    left:0;
+    top: 135px;
+}
+.search-box input{
+    width: 200px;
+    background-color: #1e0a2d;
+    border-bottom: 3px solid #8f24e6;
+    border-top: 2px solid #1993df ;
+    border-radius: 15px;
+    color: #348abe;
+    padding: 16px;
+    font-family: title-font;
+    font-size: 15px;
+}
+.search-box input::placeholder{
+    color: #8233c2;
+    font-family: title-font;
+    font-size: 20px;
+    padding-left: 50px;
+}
+/* nav bar */
+nav{
+    background-color: rgb(20, 20, 20);
+    height: 60px;
+    border-top: 2px solid #1993df;
+    border-bottom: #8233c2 solid 3px;
+}
+/* nav bar lists */
+nav ul{
+    text-align: center;
+    margin-left: 80px;
+}
+nav li{
+    list-style: none;
+    color: #4b8cbc;
+    display: inline-block;
+    padding: 12px 30px 0 24px;
+    font-size: 22px;
+    font-family: title-font;
+    cursor: pointer;
+    
+}
