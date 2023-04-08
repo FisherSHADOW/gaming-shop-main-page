@@ -1,6 +1,6 @@
 @font-face {
     font-family: title-font;
-    src: url(./assets/font/BreeSerif-Regular.ttf);
+    src: url(/assets/font/BreeSerif-Regular.ttf);
 }
 *{
     margin:0;
@@ -11,7 +11,7 @@
 body{
     background-color: hsl(0, 0%, 26%);
     justify-content: center;
-    background-image: url(./assets/image/wallpaperflare.com_wallpaper.jpg);
+    background-image: url(/assets/image/wallpaperflare.com_wallpaper.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 /* header */
