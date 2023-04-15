@@ -95,17 +95,21 @@ nav{
     height: 60px;
     border-top: 2px solid #1993df;
     border-bottom: #8233c2 solid 3px;
+    display: flex;
 
 }
 /* nav bar lists */
 nav ul{
     text-align: center;
     margin-left: 80px;
+    display: flex;
+    justify-content: center;
 }
 nav li{
     list-style: none;
     color: #4b8cbc;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     padding: 12px 30px 0 24px;
     font-size: 22px;
     font-family: title-font;
@@ -123,19 +127,15 @@ nav li{
     border-bottom: #1993df solid 3px;
 }
 .article-container{
-    
-    width: 1000px;
     height: 400px;
-    position: relative;
-    top: 100px;
-    left: 510px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .article1{
     background-color: aqua;
     width: 270px;
     height: 350px;
-    margin: 25px;
-    float: left;
     border: solid 2px white;
     border-radius: 15px;
 }
@@ -143,8 +143,6 @@ nav li{
     background-color: rgb(47, 88, 88);
     width: 270px;
     height: 350px;
-    margin: 25px;
-    float: left;
     border: solid 2px white;
     border-radius: 15px;
 }
@@ -152,13 +150,11 @@ nav li{
     background-color: rgb(47, 88, 88);
     width: 270px;
     height: 350px;
-    margin: 25px;
-    float: left;
     border: solid 2px white;
     border-radius: 15px;
     
 }
-h1{
+/* h1{
     font-family: title-font;
     font-size: 60px;
     color: aliceblue;
@@ -168,4 +164,4 @@ h1{
 
 
 
-}
+} */
