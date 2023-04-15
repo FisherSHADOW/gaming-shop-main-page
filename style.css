@@ -15,6 +15,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 /* header */
+
 }
 header{ 
     background: rgb(0,0,0);
@@ -28,6 +29,7 @@ header .container{
     width: 1500px;
     margin: 0 auto;
 /* logo image  */
+
 }
 .content{
     position: relative;
@@ -39,6 +41,7 @@ header .logo{
     top: -25px
 }
 /* social media icons box  */
+
 .social-box{
     position: absolute;
     top: 137px;
@@ -63,6 +66,7 @@ header .logo{
     float: left;
 }
 /* search box  */
+
 .search-box{
     position: absolute;
     left:0;
@@ -86,27 +90,28 @@ header .logo{
     padding-left: 50px;
 }
 /* nav bar */
+
 nav{
     background-color: rgb(20, 20, 20);
     height: 60px;
     border-top: 2px solid #1993df;
     border-bottom: #8233c2 solid 3px;
     display: flex;
-
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
 }
 /* nav bar lists */
 nav ul{
     text-align: center;
-    margin-left: 80px;
     display: flex;
     justify-content: center;
+    gap: 70px;
 }
 nav li{
     list-style: none;
     color: #4b8cbc;
     display: flex;
-    flex-direction: row;
-    padding: 12px 30px 0 24px;
     font-size: 22px;
     font-family: title-font;
     cursor: pointer;
@@ -125,6 +130,7 @@ nav li{
     align-items: center;
 }
 /*article container */
+
 .article-container{
     height: 400px;
     display: flex;
