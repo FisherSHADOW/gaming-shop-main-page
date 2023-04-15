@@ -105,5 +105,25 @@ nav li{
     font-size: 22px;
     font-family: title-font;
     cursor: pointer;
-    
+}
+/* section  */
+
+.section{
+    background-color: #348abe;
+    position: relative;
+    height:40vh;
+    background-color: rgb(20, 20, 20);
+    height: 500px;
+    border-top: 2px solid #8233c2 solid;
+    border-bottom: #1993df solid 3px;
+}
+section article{
+    background-color: rgb(255, 3, 36);
+    width: 1000px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 460px
+
+
 }
