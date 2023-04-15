@@ -1,4 +1,8 @@
-@font-face {
+
+
+
+
+font-face {
     font-family: title-font;
     src: url(./assets/font/BreeSerif-Regular.ttf);
 }
@@ -91,6 +95,7 @@ nav{
     height: 60px;
     border-top: 2px solid #1993df;
     border-bottom: #8233c2 solid 3px;
+
 }
 /* nav bar lists */
 nav ul{
@@ -117,13 +122,50 @@ nav li{
     border-top: 2px solid #8233c2 solid;
     border-bottom: #1993df solid 3px;
 }
-section article{
-    background-color: rgb(255, 3, 36);
+.article-container{
+    
     width: 1000px;
     height: 400px;
+    position: relative;
+    top: 100px;
+    left: 510px;
+}
+.article1{
+    background-color: aqua;
+    width: 270px;
+    height: 350px;
+    margin: 25px;
+    float: left;
+    border: solid 2px white;
+    border-radius: 15px;
+}
+.article2{
+    background-color: rgb(47, 88, 88);
+    width: 270px;
+    height: 350px;
+    margin: 25px;
+    float: left;
+    border: solid 2px white;
+    border-radius: 15px;
+}
+.article3{
+    background-color: rgb(47, 88, 88);
+    width: 270px;
+    height: 350px;
+    margin: 25px;
+    float: left;
+    border: solid 2px white;
+    border-radius: 15px;
+    
+}
+h1{
+    font-family: title-font;
+    font-size: 60px;
+    color: aliceblue;
     position: absolute;
-    top: 0;
-    left: 460px
+    left:635px;
+    top: 50px;
+
 
 
 }
