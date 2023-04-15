@@ -1,8 +1,4 @@
-
-
-
-
-font-face {
+@font-face {
     font-family: title-font;
     src: url(./assets/font/BreeSerif-Regular.ttf);
 }
@@ -119,18 +115,22 @@ nav li{
 
 .section{
     background-color: #348abe;
-    position: relative;
     height:40vh;
     background-color: rgb(20, 20, 20);
     height: 500px;
     border-top: 2px solid #8233c2 solid;
     border-bottom: #1993df solid 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+/*article container */
 .article-container{
     height: 400px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 .article1{
     background-color: aqua;
@@ -161,7 +161,4 @@ nav li{
     position: absolute;
     left:635px;
     top: 50px;
-
-
-
 } */
