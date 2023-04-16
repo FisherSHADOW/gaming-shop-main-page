@@ -26,7 +26,6 @@ body{
     justify-content: center;
     background-image: url(./assets/image/wallpaperflare.com_wallpaper.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
 
     /* header */
 
@@ -35,59 +34,58 @@ header{
     background: rgb(0,0,0);
     background: rgb(22,17,22);
     background: linear-gradient(180deg, rgba(22,17,22,1) 0%, rgba(31,9,47,1) 100%);
+    display: flex;
 }
 header .container{
+    width: 100vw;
     height: 200px;
+    display: flex;
+    justify-content: space-around;
+
 }
+/* container  */
 .container{
-    width: 1500px;
+    width: 100vw;
     margin: 0 auto;
-
-    /* logo image  */
-
 }
-.content{
-    position: relative;
-}
+/* .content{
+    display: flex;
+    background-color: brown;
+    margin-left: 100px;
+} */
 header .logo{
-    width: 250px;
-    position: absolute;
-    left: 640px;
-    top: -25px
+    width: 230px;
+    height: 230px;
+    display: flex;
 }
-
+.logo{
+    
+}
 /* social media icons box  */
 
 .social-box{
-    position: absolute;
-    top: 137px;
-    right: 0;
-    margin-right: 0;
+    margin-top: 130px;
 }
 .discord{
     width: 55px;
     height: auto;
-    float: left;
     margin-right: 5px;
 }
 .instagram{
     width: 55px;
     height: auto;
-    float: left;
     margin-right: 5px;
 }
 .telegram{
     width: 55px;
     height: auto;
-    float: left;
 }
 
 /* search box  */
 
 .search-box{
-    position: absolute;
-    left:0;
-    top: 135px;
+    margin-top: 130px;
+  
 }
 .search-box input{
     width: 200px;
@@ -105,7 +103,6 @@ header .logo{
     font-family: xregular;
     font-size: 18px;
     padding-left: 50px;
-
 }
 
 /* nav bar */
@@ -149,7 +146,6 @@ nav li:hover{
 /* section  */
 
 .section{
-    height:40vh;
     height: 500px;
     border-top: 2px solid #8233c2 solid;
     border-bottom: #1993df solid 3px;
