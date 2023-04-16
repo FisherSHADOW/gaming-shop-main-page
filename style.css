@@ -103,8 +103,9 @@ header .logo{
 .search-box input::placeholder{
     color: #8233c2;
     font-family: xregular;
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 50px;
+
 }
 
 /* nav bar */
@@ -163,6 +164,7 @@ nav li{
 .article1{
     width: 270px;
     height: 350px;
+    background-color: rgb(20, 20, 20);
     border: 5px solid;
     border-image: linear-gradient(-250deg,#8233c2,#1993df) 10;
     display: flex;
@@ -177,10 +179,12 @@ nav li{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-position: center;
 }
 .article2{
     width: 270px;
     height: 350px;
+    background-color: rgb(20, 20, 20);
     border: 5px solid;
     border-image: linear-gradient(45deg,#8233c2,#1993df) 10;
     display: flex;
@@ -199,6 +203,7 @@ nav li{
 .article3{
     width: 270px;
     height: 350px;
+    background-color: rgb(20, 20, 20);
     border: 5px solid;
     border-image: linear-gradient(300deg,#8233c2,#1993df) 10;
     display: flex;
@@ -215,39 +220,45 @@ nav li{
     align-items: center;
 }
 /* article title */
+
 .title1,.title2,.title3{
     font-family: xsemibold;
-    font-size: 30px;
+    font-size: 22px;
     margin-top: 20px;
     text-align: center;
-    color: white;
+    color: #4b8cbc;
 }
-/* article text */
+/* article texts */
+
 .text1,.text2,.text3{
-margin: 10px 0 0 10px ;
-font-size: 20px;
-font-family: xregular;
-color: white;
+    margin-top: 10px;
+    font-size: 17px;
+    font-family: xthin;
+    color: rgb(226, 226, 226);
+    text-align: center;
+    padding: 10px;
 }
+/* articles icon */
+
 .article-icon1{
-    width: 100px;
-    height:100px;
+    width: 70px;
+    height:70px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
 }
 .article-icon2{
-    width: 100px;
-    height:100px;
+    width: 70px;
+    height:70px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
 }
 .article-icon3{
-    width: 100px;
-    height:100px;
+    width: 70px;
+    height:70px;
     display: flex;
     justify-content: center;
     align-items: center;
