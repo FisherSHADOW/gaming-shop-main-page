@@ -70,11 +70,6 @@ header .logo{
     float: left;
     margin-right: 5px;
 }
-.discord:hover{
-    transform: scale(1.4);
-    color: #bebebe;
-
-}
 .instagram{
     width: 55px;
     height: auto;
