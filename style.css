@@ -193,7 +193,9 @@ font-size: 20px;
 font-family: xregular;
 }
 .article-icon{
-    width: 200px;
-    display: flex;
+    width: 100px;
+    height:auto;
+    display:flex
+
 
 }
