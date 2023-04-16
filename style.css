@@ -1,3 +1,20 @@
+@font-face {
+    font-family:xthin ;
+    src: url(./assets/font/Poppins-ExtraLight.ttf);
+}
+@font-face {
+    font-family:xregular;
+    src: url(./assets/font/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family:xsemibold;
+    src: url(./assets/font/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: xbold;
+    src: url(./assets/font/Poppins-Bold.ttf);
+}
+
 *{
     margin:0;
     padding: 0;
@@ -80,12 +97,12 @@ header .logo{
     border-radius: 15px;
     color: #348abe;
     padding: 16px;
-    font-family: title-font;
+    font-family: xthin;
     font-size: 15px;
 }
 .search-box input::placeholder{
     color: #8233c2;
-    font-family: title-font;
+    font-family: xregular;
     font-size: 20px;
     padding-left: 50px;
 }
@@ -116,16 +133,15 @@ nav li{
     color: #4b8cbc;
     display: flex;
     font-size: 22px;
-    font-family: title-font;
+    font-family: xsemibold;
+    font-weight: bold;
     cursor: pointer;
 }
 
 /* section  */
 
 .section{
-    background-color: #348abe;
     height:40vh;
-    background-color: rgb(20, 20, 20);
     height: 500px;
     border-top: 2px solid #8233c2 solid;
     border-bottom: #1993df solid 3px;
@@ -145,43 +161,39 @@ nav li{
     gap: 30px ;
 }
 .article1{
-    background-color: aqua;
     width: 270px;
     height: 350px;
-    border: solid 3px white;
-    border-radius: 15px;
+    border: 5px solid;
+    border-image: linear-gradient(-250deg,#8233c2,#1993df) 10;
+  
 }
 .article2{
-    background-color: rgb(47, 88, 88);
     width: 270px;
     height: 350px;
-    border: solid 3px white;
-    border-radius: 15px;
+    border: 5px solid;
+    border-image: linear-gradient(45deg,#8233c2,#1993df) 10;
 }
 .article3{
-    background-color: rgb(47, 88, 88);
     width: 270px;
     height: 350px;
-    border: solid 3px white;
-    border-radius: 15px;
+    border: 5px solid;
+    border-image: linear-gradient(300deg,#8233c2,#1993df) 10;
 }
 /* article title */
 .title1,.title2,.title3{
-    margin-left: 20px;
-    margin-top: 20px;
-    text-decoration: underline overline;
+    font-family: xsemibold;
+    font-size: 30px;
+    margin-top: 70px;
+    text-align: center;
 }
-
-
+/* article text */
 .text1,.text2,.text3{
 margin: 20px 0 0 10px ;
-font-size: 25px;
+font-size: 20px;
+font-family: xregular;
 }
-/* h1{
-    font-family: title-font;
-    font-size: 60px;
-    color: aliceblue;
-    position: absolute;
-    left:635px;
-    top: 50px;
-} */
+.article-icon{
+    width: 200px;
+    display: flex;
+
+}
