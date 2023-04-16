@@ -196,7 +196,6 @@ nav li:hover{
     transform: scale(1.4);
     background-color: #210d31;
     margin-right: 5px;
-
 }
 .article2{
     background-color: rgb(20, 20, 20);
@@ -210,8 +209,6 @@ nav li:hover{
     transition: 700ms ease-in-out;
     cursor: pointer;
     margin: 0 20px 0 20px;
-
-    
 }
 .article2:hover{
     width: 270px;
@@ -234,7 +231,6 @@ nav li:hover{
     flex-direction: column;
     align-items: center;
     transition: 700ms ease-in-out;
-
 }
 .article3:hover{
     width: 270px;
