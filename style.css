@@ -23,7 +23,6 @@
 }
 body{
     background-color: hsl(0, 0%, 26%);
-    height: 300vw;
     justify-content: center;
     background-image: url(./assets/image/wallpaperflare.com_wallpaper.jpg);
     background-repeat: no-repeat;
@@ -58,6 +57,7 @@ header .logo{
     width: 230px;
     height: 230px;
     display: flex;
+    margin-top: -20px;
 }
 
 /* social media icons box  */
@@ -280,8 +280,18 @@ nav li:hover{
     align-items: center;
     margin-top: 30px;
 }
-/* media querry for responsiveness  */
+/* media querry for max 1000px screen  */
+
 @media screen and (max-width: 1000px) {
+    header .logo{
+        margin-top: 0;
+    }
+    .social-box{
+        bottom: 0px;
+    }
+    .search-box{
+        bottom: 3px;
+    }
     .section{
         width: 100vw;
         height: 500px;
@@ -327,6 +337,7 @@ nav li:hover{
         cursor: pointer;
         transform: scale(1);
     }
+    /* media querry for max 700px screens */
 }
 @media screen and (max-width: 700px){
     nav ul{
@@ -367,6 +378,8 @@ nav li:hover{
         top: -10px
     }
 }
+    /* media querry for max 600px screens */
+
 @media screen and (max-width:600px){
     nav ul{
         display: flex;
@@ -404,7 +417,9 @@ nav li:hover{
         top: -10px
     }
 }
-@media screen and (max-width:506px){
+        /* media querry for max 525px screens */
+
+@media screen and (max-width:525px){
     nav ul{
         display: flex;
         justify-content: center;
@@ -428,12 +443,11 @@ nav li:hover{
         scale: 0.6;
         position: absolute;
         right: -2px;
-        top: -20px;
-
-        }
+        top: -30px
+    }
         .container{
         position: relative;
-        }
+    }
     .search-box{
         scale: 0.6;
         right: -10px;
