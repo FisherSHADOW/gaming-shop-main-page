@@ -70,6 +70,11 @@ header .logo{
     float: left;
     margin-right: 5px;
 }
+.discord:hover{
+    transform: scale(1.4);
+    color: #bebebe;
+
+}
 .instagram{
     width: 55px;
     height: auto;
@@ -133,10 +138,17 @@ nav li{
     list-style: none;
     color: #4b8cbc;
     display: flex;
-    font-size: 22px;
+    font-size: 20px;
     font-family: xsemibold;
     font-weight: bold;
     cursor: pointer;
+    transition: 400ms ease-in-out;
+    
+}
+nav li:hover{
+    transform: scale(1.4);
+    color: #bebebe;
+
 }
 
 /* section  */
@@ -162,14 +174,16 @@ nav li{
     gap: 30px ;
 }
 .article1{
+    background-color: rgb(20, 20, 20);
     width: 270px;
     height: 350px;
-    background-color: rgb(20, 20, 20);
     border: 5px solid;
     border-image: linear-gradient(-250deg,#8233c2,#1993df) 10;
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: 700ms ease-in-out;
+    cursor: pointer;
 }
 .article1:hover{
     width: 270px;
@@ -179,17 +193,23 @@ nav li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-position: center;
+    transform: scale(1.4);
+    background-color: #210d31;
+
 }
 .article2{
+    background-color: rgb(20, 20, 20);
     width: 270px;
     height: 350px;
-    background-color: rgb(20, 20, 20);
     border: 5px solid;
     border-image: linear-gradient(45deg,#8233c2,#1993df) 10;
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: 700ms ease-in-out;
+    cursor: pointer;
+
+    
 }
 .article2:hover{
     width: 270px;
@@ -199,6 +219,8 @@ nav li{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transform: scale(1.4);
+    background-color: #210d31;
 }
 .article3{
     width: 270px;
@@ -218,6 +240,10 @@ nav li{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: 700ms ease-in-out;
+    cursor: pointer;
+    transform: scale(1.4);
+    background-color: #210d31;
 }
 /* article title */
 
