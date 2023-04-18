@@ -26,7 +26,7 @@ body{
     justify-content: center;
     background-image: url(./assets/image/wallpaperflare.com_wallpaper.jpg);
     background-repeat: no-repeat;
-
+    scroll-behavior: smooth;
     /* header */
 
 }
@@ -134,7 +134,22 @@ nav li{
     font-weight: bold;
     cursor: pointer;
     transition: 400ms ease-in-out;
-    
+}
+.social-target{
+    list-style: none;
+    color: #4b8cbc;
+    display: flex;
+    font-family: xsemibold;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+    text-decoration: none;
+}
+.social-target:hover{
+    transform: scale(1.4);
+    color: #bebebe;
+
+
 }
 nav li:hover{
     transform: scale(1.4);
@@ -420,6 +435,9 @@ nav li:hover{
         /* media querry for max 525px screens */
 
 @media screen and (max-width:525px){
+    body{
+        height: 110vh;
+    }
     nav ul{
         display: flex;
         justify-content: center;
@@ -441,23 +459,29 @@ nav li:hover{
     }
     .social-box{
         scale: 0.6;
-        position: absolute;
-        right: -2px;
-        top: -30px
+        position: relative;
+        top: 1000px;
+        left: auto;
+        right: auto;
     }
         .container{
         position: relative;
     }
     .search-box{
-        scale: 0.6;
-        right: -10px;
+        scale: 0.8;
         top: 20px;
+        right: auto;
+        left: auto;
     }
     header .logo{
+        scale: 0.7;
         position: absolute;
-        left: 0px;
-        top: -10px
+        left: auto;
+        right: auto;
+        top: -35px;
     }
 }
+
+
 
 
