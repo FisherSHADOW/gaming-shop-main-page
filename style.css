@@ -21,6 +21,10 @@
     border: 0;
     outline: none;
 }
+html::-webkit-scrollbar {
+  display: none;
+}
+
 body{
     background-color: hsl(0, 0%, 26%);
     justify-content: center;
