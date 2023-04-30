@@ -1,0 +1,185 @@
+/* media querry for max 1000px screen  */
+@media screen and (max-width: 1000px) {
+    header .logo{
+        margin-top: 0;
+    }
+    .social-box{
+        bottom: 0px;
+    }
+    .search-box{
+        bottom: 3px;
+    }
+    .section{
+        width: 100vw;
+        height: 500px;
+        overflow-y: scroll;
+    }
+    .article-container{
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .article1, .article2, .article3{
+        width:fit-content;
+        margin: 0 auto;
+    }
+    .article1:hover{
+        width:fit-content;
+        margin: 0 auto;
+        border: 5px solid;
+        border-image: linear-gradient(-300deg,#8233c2,#1993df) 10;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transform: scale(1);
+}
+    .article2:hover{
+        width:fit-content;
+        margin: 0 auto;
+        border: 5px solid;
+        border-image: linear-gradient(-300deg,#8233c2,#1993df) 10;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transform: scale(1);
+}
+    .article3:hover{
+        width:fit-content;
+        margin: 0 auto;
+        border: 5px solid;
+        border-image: linear-gradient(-300deg,#8233c2,#1993df) 10;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transform: scale(1);
+    }
+    /* media querry for max 700px screens */
+}
+@media screen and (max-width: 700px){
+    nav ul{
+
+        justify-content: center;
+        gap: 30px;
+    }
+    nav li{
+        list-style: none;
+        color: #4b8cbc;
+        display: flex;
+        font-size: 17px;
+        font-family: xsemibold;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 400ms ease-in-out; 
+    }
+    nav li:hover{
+        transform: scale(1.4);
+        color: #bebebe;
+    }
+    .social-box{
+        scale: 0.8;
+        position: absolute;
+        right: 180px;
+        }
+        .container{
+        position: relative;
+        }
+    .search-box{
+        scale: 0.8;
+        position: absolute;
+        right: 0;
+    }
+    header .logo{
+        position: absolute;
+        left: 0px;
+        top: -10px
+    }
+}
+    /* media querry for max 600px screens */
+
+@media screen and (max-width:600px){
+    nav ul{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    nav li{
+        list-style: none;
+        color: #4b8cbc;
+        display: flex;
+        font-size: 15px;
+        font-family: xsemibold;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 400ms ease-in-out; 
+    }
+    nav li:hover{
+        transform: scale(1.4);
+        color: #bebebe;
+    }
+    .social-box{
+        scale: 0.8;
+        position: absolute;
+        right: 180px;
+        }
+        .container{
+        position: relative;
+        }
+    .search-box{
+        scale: 0.8;
+    }
+    header .logo{
+        position: absolute;
+        left: 0px;
+        top: -10px
+    }
+}
+        /* media querry for max 525px screens */
+
+@media screen and (max-width:525px){
+    body{
+        height: 110vh;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    nav li{
+        list-style: none;
+        color: #4b8cbc;
+        display: flex;
+        font-size: 12px;
+        font-family: xsemibold;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 400ms ease-in-out; 
+    }
+    nav li:hover{
+        transform: scale(1.4);
+        color: #bebebe;
+    }
+    .social-box{
+        scale: 0.6;
+        position: relative;
+        top: 1000px;
+        left: auto;
+        right: auto;
+    }
+        .container{
+        position: relative;
+    }
+    .search-box{
+        scale: 0.8;
+        top: 20px;
+        right: auto;
+        left: auto;
+    }
+    header .logo{
+        scale: 0.7;
+        position: absolute;
+        left: auto;
+        right: auto;
+        top: -35px;
+    }
+}
