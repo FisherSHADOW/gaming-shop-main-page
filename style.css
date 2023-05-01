@@ -88,6 +88,15 @@ header .logo{
     width: 55px;
     height: auto;
 }
+.discord:hover{
+    animation: rotation 1s ease-in-out 100ms 1 forwards ;
+}
+.instagram:hover{
+    animation: rotation 1s ease-in-out 100ms 1 forwards ;
+}
+.telegram:hover{
+    animation: rotation 1s ease-in-out 100ms 1 both ;
+}
 /* search box  */
 
 .search-box{
@@ -155,6 +164,7 @@ nav li{
 .social-target:hover{
     transform: scale(1);
     color: #bebebe;
+
 
 
 }
@@ -329,7 +339,6 @@ nav li:hover{
     align-items: center;
     gap: 30px ;
 }
-
 .s2article1{
     background-color: rgb(20, 20, 20);
     width: 270px;
@@ -344,17 +353,6 @@ nav li:hover{
     animation: article-box1 2s ease-in-out 100ms 1 normal, 
     rgb-border 3s ease-in-out 350ms infinite alternate;
     overflow: hidden;
-    
-}
-.s2article1:hover{
-    width: 270px;
-    height: 350px;
-    border: 5px solid;
-    border-image: linear-gradient(250deg,#8233c2,#1993df) 10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #210d31;
 }
 .s2article2{
     background-color: rgb(20, 20, 20);
@@ -372,16 +370,6 @@ nav li:hover{
     rgb-border 3s ease-in-out 350ms infinite alternate;
     overflow: hidden;
 }
-.s2article2:hover{
-    width: 270px;
-    height: 350px;
-    border: 5px solid;
-    border-image: linear-gradient(-45deg,#8233c2,#1993df) 10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #210d31;
-}
 .s2article3{
     background-color: rgb(20, 20, 20);
     width: 270px;
@@ -393,22 +381,10 @@ nav li:hover{
     align-items: center;
     transition: 700ms ease-in-out;
     cursor: pointer;
-    margin: 0 20px 0 20px;
     animation: article-box2 2s ease-in-out 200ms 1 normal, 
     rgb-border 3s ease-in-out 350ms infinite alternate;
     overflow: hidden;
 }
-/* .s2article3:hover{
-    width: 270px;
-    height: 350px;
-    border: 5px solid;
-    border-image: linear-gradient(-45deg,#8233c2,#1993df) 10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #210d31;
-} */
-
 
 /* article title */
 
@@ -418,6 +394,10 @@ nav li:hover{
     margin-top: 20px;
     text-align: center;
     color: #4b8cbc;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    transition: all 700ms ease-in-out;
 }
 /* article texts */
 
@@ -425,10 +405,11 @@ nav li:hover{
     margin-top: 10px;
     font-size: 17px;
     font-family: xthin;
-    color: rgb(226, 226, 226);
+    color: #1993df;
     text-align: center;
     padding: 10px;
 }
+
 .sidebar{
     width: 400px;
     height:400px;
@@ -449,16 +430,21 @@ nav li:hover{
 .section2 a{
 font-size: 40px;
 color: rgb(226, 226, 226);
-user-select: none;
+transition: all 150ms ease-in-out;
 
 }
+.section2 a{
+font-size: 40px;
+color: rgb(226, 226, 226);
+transition: all 150ms ease-in-out;
+}
+
 .section2 a:hover{
     color: #1993df;
     transform: scale(1.2);
-    
 }
-:target{
 
+.section2 :target{
     width: 270px;
     height: 350px;
     border: 5px solid;
@@ -468,3 +454,32 @@ user-select: none;
     align-items: center;
     background-color: #210d31;
 }
+
+.section2 :target .s2text1{
+    color: rgb(226, 226, 226);
+}
+.section2 :target .s2text2{
+    color: rgb(226, 226, 226);
+}
+.section2 :target .s2text3{
+    color: rgb(226, 226, 226); 
+}
+.section2 :target .s2title1{
+    color:#8233c2;  
+    font-size: 30px;
+
+    
+}
+.section2 :target .s2title2{
+    color:#8233c2;
+    font-size: 30px;
+    
+}
+.section2 :target .s2title3{
+    color:#8233c2;
+    font-size: 30px;
+    
+}
+
+
+
