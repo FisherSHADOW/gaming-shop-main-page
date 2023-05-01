@@ -415,14 +415,14 @@ nav li:hover{
     pointer-events: painted;
 }
 .section2 a{
-font-size: 40px;
-color: rgb(70, 70, 70);
-transition: all 150ms ease-in-out;
+    font-size: 40px;
+    color: rgb(70, 70, 70);
+    transition: all 150ms ease-in-out;
 }
 .section2 a{
-font-size: 40px;
-color: rgb(156, 156, 156);
-transition: all 150ms ease-in-out;
+    font-size: 40px;
+    color: rgb(156, 156, 156);
+    transition: all 150ms ease-in-out;
 }
 .section2 a:hover{
     color: #1993df;
@@ -460,8 +460,9 @@ transition: all 150ms ease-in-out;
 .section2 :target .s2title3{
     color:#8233c2;
     font-size: 30px;
-    
 }
+
+
 
 
 

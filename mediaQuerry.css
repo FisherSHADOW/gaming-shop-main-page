@@ -1,10 +1,10 @@
 /* media querry for max 1000px screen  */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1081px) {
     header .logo{
         margin-top: 0;
     }
     .social-box{
-        bottom: 0px;
+        bottom: -20px;
     }
     .search-box{
         bottom: 3px;
@@ -21,7 +21,7 @@
         justify-content: flex-start;
     }
     .article1, .article2, .article3{
-        width:fit-content;
+        width:92.5%;
         margin: 0 auto;
     }
     .article1:hover{
@@ -54,8 +54,95 @@
         cursor: pointer;
         transform: scale(1);
     }
-    /* media querry for max 700px screens */
+    .sidebar{
+   display: none;
+    }
+    .section2{
+        width: 100vw;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .s2article-container{
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px ;
+    }
+    .s2article1{
+        background-color: rgb(20, 20, 20);
+        width: 88%;
+        height: 150rem;
+        border: 5px solid;
+        border-image: linear-gradient(-250deg,#8233c2,#1993df) 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 700ms ease-in-out;
+        animation: article-box1 2s ease-in-out 100ms 1 normal, 
+        rgb-border 3s ease-in-out 350ms infinite alternate;
+        margin-top: 10px;
+        overflow: visible;
+
+    }
+    .s2article2{
+        background-color: rgb(20, 20, 20);
+        width: 88%;
+        height: 150rem;
+        border: 5px solid;
+        border-image: linear-gradient(-250deg,#8233c2,#1993df) 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 700ms ease-in-out;
+        margin: 0 20px 0 20px;
+        animation: article-box2 2s ease-in-out 200ms 1 normal, 
+        rgb-border 3s ease-in-out 350ms infinite alternate;
+        overflow: visible;
+
+    }
+    .s2article3{
+        background-color: rgb(20, 20, 20);
+        width: 88%;
+        height: 150rem;
+        border: 5px solid;
+        border-image: linear-gradient(-250deg,#8233c2,#1993df) 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 700ms ease-in-out;
+        animation: article-box2 2s ease-in-out 200ms 1 normal, 
+        rgb-border 3s ease-in-out 350ms infinite alternate;
+        overflow: visible;
+    }
+
+    /* article title */
+    .s2title1,.s2title2,.s2title3{
+        font-family: xsemibold;
+        font-size: 20px;
+        margin-top: 2px;
+        text-align: center;
+        color: #4b8cbc;
+        transition: all 700ms ease-in-out;
+    }
+    /* article texts */
+    .s2text1,.s2text2,.s2text3{
+        margin-top: -25px;
+        font-size: 17px;
+        font-family: xthin;
+        color: #1993df;
+        text-align: center;
+       
+    }
+
 }
+
+
+ /* media querry for max 700px screens */
 @media screen and (max-width: 700px){
     nav ul{
 
@@ -156,13 +243,17 @@
         transition: 400ms ease-in-out; 
     }
     nav li:hover{
-        transform: scale(1.4);
+        transform: scale(1.2);
         color: #bebebe;
+    }
+    .section2{
+        height: 100%;
+    
     }
     .social-box{
         scale: 0.6;
-        position: relative;
-        top: 1000px;
+        position: absolute;
+        top: 1450px;
         left: auto;
         right: auto;
     }
@@ -182,4 +273,8 @@
         right: auto;
         top: -35px;
     }
+    .s2article-container{
+        margin-top: -150px;
+    }
+    
 }
