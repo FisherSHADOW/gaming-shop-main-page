@@ -1,4 +1,4 @@
-/* media querry for max 1000px screen  */
+/* media querry for max 1081px screen  */
 @media screen and (max-width: 1081px) {
     header .logo{
         margin-top: 0;
@@ -72,6 +72,7 @@
         justify-content: center;
         align-items: center;
         gap: 30px ;
+        margin-top: -150px;
     }
     .s2article1{
         background-color: rgb(20, 20, 20);
@@ -126,7 +127,7 @@
         font-size: 20px;
         margin-top: 2px;
         text-align: center;
-        color: #4b8cbc;
+        color: #8233c2;
         transition: all 700ms ease-in-out;
     }
     /* article texts */
@@ -134,14 +135,10 @@
         margin-top: -25px;
         font-size: 17px;
         font-family: xthin;
-        color: #1993df;
+        color: rgb(156, 156, 156);
         text-align: center;
        
     }
-
-}
-
-
  /* media querry for max 700px screens */
 @media screen and (max-width: 700px){
     nav ul{
@@ -167,6 +164,7 @@
         scale: 0.8;
         position: absolute;
         right: 180px;
+        bottom: 0px;
         }
         .container{
         position: relative;
@@ -180,6 +178,9 @@
         position: absolute;
         left: 0px;
         top: -10px
+    }
+    .s2article-container{
+        margin-top: -100px !important;
     }
 }
     /* media querry for max 600px screens */
@@ -219,6 +220,9 @@
         position: absolute;
         left: 0px;
         top: -10px
+    }
+    .s2article-container{
+        margin-top: -50px !important;
     }
 }
         /* media querry for max 525px screens */
@@ -274,7 +278,60 @@
         top: -35px;
     }
     .s2article-container{
-        margin-top: -150px;
+        margin-top: -700px !important;
     }
+}
+@media screen and (max-width:482px){
+    body{
+        height: 110vh;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    nav li{
+        list-style: none;
+        color: #4b8cbc;
+        display: flex;
+        font-size: 12px;
+        font-family: xsemibold;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 400ms ease-in-out; 
+    }
+    nav li:hover{
+        transform: scale(1.2);
+        color: #bebebe;
+    }
+    .section2{
+        height: 100%;
     
+    }
+    .social-box{
+        scale: 0.6;
+        position: absolute;
+        top: 1450px;
+        left: auto;
+        right: auto;
+    }
+        .container{
+        position: relative;
+    }
+    .search-box{
+        scale: 0.8;
+        top: 20px;
+        right: auto;
+        left: auto;
+    }
+    header .logo{
+        scale: 0.7;
+        position: absolute;
+        left: auto;
+        right: auto;
+        top: -35px;
+    }
+    .s2article-container{
+        margin-top: -400px !important;
+    }
 }
