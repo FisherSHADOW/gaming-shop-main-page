@@ -21,9 +21,9 @@
     border: 0;
     outline: none;
 }
-html::-webkit-scrollbar {
+/* html::-webkit-scrollbar {
   display: none;
-}
+} */
 
 body{
     background-color: hsl(0, 0%, 26%);
@@ -41,7 +41,7 @@ header{
 }
 header .container{
     width: 100vw;
-    height: 200px;
+    height: 25vh;
     display: flex;
     justify-content: space-around;
 
@@ -64,11 +64,8 @@ header .logo{
     animation-name: logo-motion;
     animation-duration: 2s;
     animation-delay: 500ms;
-    animation-timing-function: ease-in-out;
-    
+    animation-timing-function: ease-in-out;   
 }
-
-
 /* social media icons box  */
 
 .social-box{
@@ -119,9 +116,7 @@ header .logo{
     font-size: 18px;
     padding-left: 50px;
 }
-
 /* nav bar */
-
 nav{
     background-color: rgb(20, 20, 20);
     height: 60px;
@@ -132,9 +127,7 @@ nav{
     justify-content: center;
     align-items: center;
 }
-
 /* nav bar lists */
-
 nav ul{
     text-align: center;
     display: flex;
@@ -164,14 +157,10 @@ nav li{
 .social-target:hover{
     transform: scale(1);
     color: #bebebe;
-
-
-
 }
 nav li:hover{
     transform: scale(1.4);
     color: #bebebe;
-
 }
 /* section  */
 .section{
@@ -181,6 +170,7 @@ nav li:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 /*article container */
 .article-container{
@@ -203,7 +193,11 @@ nav li:hover{
     transition: 700ms ease-in-out;
     cursor: pointer;
     animation: article-box1 2s ease-in-out 100ms 1 normal, 
-                rgb-border 3s ease-in-out 350ms infinite alternate;
+    rgb-border 3s ease-in-out 350ms infinite alternate;
+    overflow-x: scroll;
+}
+::-webkit-scrollbar{
+    width: 0;
 }
 .article1:hover{
     width: 270px;
@@ -230,7 +224,8 @@ nav li:hover{
     cursor: pointer;
     margin: 0 20px 0 20px;
     animation: article-box2 2s ease-in-out 200ms 1 normal, 
-                rgb-border 3s ease-in-out 350ms infinite alternate;
+    rgb-border 3s ease-in-out 350ms infinite alternate;
+    overflow-x: scroll; 
 }
 .article2:hover{
     width: 270px;
@@ -255,7 +250,8 @@ nav li:hover{
     align-items: center;
     transition: 700ms ease-in-out;
     animation: article-box3 2s ease-in-out 350ms 1 normal, 
-                rgb-border 3s ease-in 350ms infinite alternate;
+    rgb-border 3s ease-in 350ms infinite alternate;
+    overflow-x: scroll; 
 }
 .article3:hover{
     width: 270px;
@@ -342,6 +338,7 @@ nav li:hover{
     animation: article-box1 2s ease-in-out 100ms 1 normal, 
     rgb-border 3s ease-in-out 350ms infinite alternate;
     overflow: hidden;
+    text-shadow: 1px 1px 10px #8233c2;
 }
 .s2article2{
     background-color: rgb(20, 20, 20);
@@ -358,6 +355,7 @@ nav li:hover{
     animation: article-box2 2s ease-in-out 200ms 1 normal, 
     rgb-border 3s ease-in-out 350ms infinite alternate;
     overflow: hidden;
+    text-shadow: 1px 1px 10px #8233c2;
 }
 .s2article3{
     background-color: rgb(20, 20, 20);
@@ -373,6 +371,7 @@ nav li:hover{
     animation: article-box2 2s ease-in-out 200ms 1 normal, 
     rgb-border 3s ease-in-out 350ms infinite alternate;
     overflow: hidden;
+    text-shadow: 1px 1px 10px #8233c2;
 }
 /* article title */
 .s2title1,.s2title2,.s2title3{
@@ -414,7 +413,6 @@ nav li:hover{
     margin-right: 15px;
     pointer-events: painted;
 }
-
 .section2 a{
     font-size: 30px;
     color: rgb(70, 70, 70);
@@ -471,8 +469,274 @@ nav li:hover{
     color:#8233c2;
     font-size: 30px;
 }
+.section3{
+    height: 600px;
+    background-color: rgb(20, 20, 20);
+    border-top: #1993df solid 3px;
+    border-bottom: #1993df solid 3px;
+    
+}
+.s3container{
+    margin-left: 25.5%;
+    margin-top: 60px;
+
+}
+.s3box1{
+    width: 270px;
+    height: 350px;
+    border: 5px solid;
+    border-image: linear-gradient(-250deg,#8233c2,#1993df) 10;
+    cursor: pointer;
+    float: left;
+    animation: article-box2 2s ease-in-out 200ms 1 normal, 
+    rgb-border 3s ease-in-out 350ms infinite alternate;    
+    overflow: hidden;
+    transition: all ease-in-out 300ms;
+    
+}
+.s3box2{
+    width: 270px;
+    height: 350px;
+    border: 5px solid;
+    border-image: linear-gradient(-250deg,#8233c2,#1993df) 10;
+    cursor: pointer;
+    float: left;
+    margin-left: 50px;
+    animation: article-box2 2s ease-in-out 250ms 1 normal, 
+    rgb-border 3s ease-in-out 350ms infinite alternate;
+    overflow: hidden;
+}
+.s3box3{
+    width: 270px;
+    height: 350px;
+    border: 5px solid;
+    border-image: linear-gradient(-250deg,#8233c2,#1993df) 10;
+    cursor: pointer;
+    float: left;
+    margin-left: 50px;
+    animation: article-box2 2s ease-in-out 310ms 1 normal, 
+    rgb-border 3s ease-in-out 350ms infinite alternate;
+    overflow: hidden;
+    box-shadow: none; 
+}
+.s3box1:hover{
+    box-shadow: 3px 1px 20px #8233c2;
+    transition: all ease-in-out 300ms;
+}
+.s3box2:hover{
+    box-shadow: 3px 1px 20px #8233c2;
+    transition: all ease-in-out 300ms;
+}
+.s3box3:hover{
+    box-shadow: 3px 1px 20px #8233c2;
+    transition: all ease-in-out 300ms;
+}
 
 
+/* .s3box1::before{
+    content: '';
+    display: block;
+    height: 355px;
+    color: rgb(195, 0, 0);
+    background-color: rgb(24, 24, 24);
+    position: relative;
+    transition: all ease-in-out 300ms;
+}
 
+.s3box1:hover::before{
+    content: 'hello brother';
+    display: block;
+    width: 80px;
+    height: 355px;
+    color: rgb(195, 0, 0);
+    background-color: rgb(24, 24, 24);
+    position: relative;
+} 
+ */
 
+.s3img1, .s3img2, .s3img3{
+    transition: all ease-in-out 300ms;
+}
+.s3box1:hover .s3img1{
+    filter: grayscale(50%);
+    filter: blur(3px);
+    transform: translateX(50px);
+    transition: all ease-in-out 300ms;
+}
+.s3box2:hover .s3img2{
+    filter: blur(3px);
+    transform: translateX(50px);
+    transition: all ease-in-out 300ms;
+}
+.s3box3:hover .s3img3{
+    filter: blur(3px);
+    transform: translateX(50px);
+    transition: all ease-in-out 300ms;
+}
+.s3iconBox1{
+    width: 80px;
+    height: 350px;
+    background: rgb(0,0,0);
+    background: rgb(22,17,22);
+    background: linear-gradient(150deg, rgba(22,17,22,1) 0%, rgba(31,9,47,1) 100%);
+    display: inline-block;
+    transform: scale(2);
+    position: relative;
+    bottom: 350px;
+    left: -120px;
+    transition: all ease-in-out 300ms;
+    text-align: center;
+    line-height: 0px;
+}
+.s3iconBox2{
+    width: 80px;
+    height: 350px;
+    background: rgb(0,0,0);
+    background: rgb(22,17,22);
+    background: linear-gradient(150deg, rgba(22,17,22,1) 0%, rgba(31,9,47,1) 100%);
+    display: inline-block;
+    transform: scale(2);
+    position: relative;
+    bottom: 350px;
+    left: -120px;
+    transition: all ease-in-out 300ms;
+    text-align: center;
+    line-height: 0px;
+}
+.s3iconBox3{
+    width: 80px;
+    height: 350px;
+    background: rgb(0,0,0);
+    background: rgb(22,17,22);
+    background: linear-gradient(150deg, rgba(22,17,22,1) 0%, rgba(31,9,47,1) 100%);
+    display: inline-block;
+    transform: scale(2);
+    position: relative;
+    bottom: 350px;
+    left: -120px;
+    transition: all ease-in-out 300ms;
+    text-align: center;
+    line-height: 0px;
+}
+.s3box1:hover .s3iconBox1{
+    width: 85px;
+    height: 350px;
+    background-color: #8f24e6;
+    display: inline-block;
+    position: relative;
+    bottom: 354px;
+    transform: translateX(100px);
+    transition: all ease-in-out 300ms;
+    line-height: 120px;
+}
+.s3box2:hover .s3iconBox2{
+    width: 85px;
+    height: 350px;
+    background-color: #8f24e6;
+    display: inline-block;
+    position: relative;
+    bottom: 354px;
+    transform: translateX(100px);
+    transition: all ease-in-out 300ms;
+    line-height: 120px;
+}
+.s3box3:hover .s3iconBox3{
+    width: 85px;
+    height: 350px;
+    background-color: #8f24e6;
+    display: inline-block;
+    position: relative;
+    bottom: 354px;
+    transform: translateX(100px);
+    transition: all ease-in-out 300ms;
+}
+.s3iconBox1 a{
+    padding:40px;
+    line-height: 120px;    
+}
+.s3iconBox2 a{
+    padding:40px;
+    line-height: 120px;    
+}
+.s3iconBox3 a{
+    padding:40px;
+    line-height: 120px;    
+}
+.s3iconBox1 a:hover{
+    color: #1993df;
+    line-height: 120px;
+    margin-left: 5px;   
+}
+.s3iconBox2 a:hover{
+    color: #1993df;
+    line-height: 120px;   
+    margin-left: 5px;
+}
+.s3iconBox3 a:hover{
+    color: #1993df;
+    line-height: 120px;
+    margin-left: 5px;
+}
+.clear{
+    clear: both;
+}
+.form-container{
+    width: 100vw;
+    height: 400px;
+    background-color:  #cbcbcb;
+    margin-top: 60px; 
+    transition: all ease-in-out  1s;
+    border-top: #1993df solid 3px;
+}
+form{
+    text-align: center;
+    position: relative;
+    top: 70px;
+    transition: all ease-in-out 1s;
+}
+.input-box{
+    width: 200px;
+    background-color: #1e0a2d;
+    border-bottom: 3px solid #8f24e6;
+    border-top: 2px solid #1993df ;
+    border-radius: 10px;
+    color: #348abe;
+    padding: 10px;
+    font-family: xthin;
+    font-size: 15px;
+    margin-top: 10px;
+    background-color: transparent;
+}
+.input-box::placeholder{
+    color: #8233c2;
+    background-color: transparent;
+    font-family: xregular;
+    font-size: 18px;
+    padding-left: 50px;
+}
+.form-title{
+    font-family: xsemibold;
+    display: inline-block;
+    padding: 10px;
+    font-size: 35px;
+    text-align: center;
+    color: #4b8cbc;
+    border-bottom: 3px #1e0a2d solid;
+    position: relative;
+    bottom: 35px;
+}
+.form-label{
+    font-family: xregular;
+    font-size: 20px;;
+    text-align: center;
+    color: #4b8cbc;
+    margin-top: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+ 
+.form-container:focus-within{
+    background-color: #1e0a2d;
+    transition: all ease-in-out  1s;
+}
 
