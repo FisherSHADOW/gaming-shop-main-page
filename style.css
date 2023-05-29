@@ -727,7 +727,7 @@ form{
     font-size: 20px;;
     text-align: center;
     color: #4b8cbc;
-    margin-top: 10px;
+    margin-top: 5px;
     cursor: pointer;
     box-sizing: border-box;
 }
@@ -736,4 +736,33 @@ form{
     background-color: #1e0a2d;
     transition: all ease-in-out  1s;
 }
-
+#emailLbl::after{
+    content: '';
+    display: block;
+    width: 75px;
+    margin-left: 57.5rem;
+    margin-top: 5px;
+    border-bottom: solid 3px #8233c2;   
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    transform-origin:  bottom right ; 
+  }
+  #emailLbl:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+   }
+#passLbl::after{
+    content: '';
+    display: block;
+    width: 100px;
+    margin-left: 56.7rem;
+    margin-top: 5px;
+    border-bottom: solid 3px #8233c2;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    transform-origin:  bottom right ; 
+  }
+  #passLbl:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+   }
